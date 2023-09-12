@@ -1,0 +1,10 @@
+app:
+  name: react-restaurant
+  replicaCount: 1
+  container:
+    image: menghout43/my-react-restaurant-image
+    port: 3000
+  service:
+    type: NodePort
+    port: 3000
+    nodePort: 31000

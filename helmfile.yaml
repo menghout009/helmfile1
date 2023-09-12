@@ -1,0 +1,32 @@
+releases:
+  - name: react-restuarant
+    chart: ./react
+    values:
+      - ./react/value-res.yaml
+    installed: true
+  - name: react-res2
+    chart: ./react
+    values:
+      - ./react/values2.yaml
+    installed: true
+  - name: react-res3
+    chart: ./react
+    values:
+      - ./react/values3.yaml
+    installed: true
+
+  - name: spring-boot-homework1
+    chart: ./spring
+    values:
+      - ./spring/value-spring-homework1
+    installed: true
+  - name: spring-boot-homework2
+    chart: ./spring
+    values:
+      - ./spring/value-spring-homework2
+    installed: true
+  - name: spring-boot-homework3
+    chart: ./spring
+    values:
+      - ./spring/value-spring-homework3
+    installed: true

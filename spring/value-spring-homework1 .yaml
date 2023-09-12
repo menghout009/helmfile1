@@ -1,0 +1,21 @@
+app:
+  name: spring-boot-homework1
+  replicaCount: 1
+  container:
+    image: kimheang68/api-hw2:v1
+    port: 8080
+    config:
+      - name: postgres-config
+    env:
+      - key: DB_SERVER
+        value: postgres
+      - key: SPRING_DATASOURCE_URL
+        value: "jdbc:postgresql://postgres:5432/kanban"
+      - key: SPRING_DATASOURCE_USERNAME
+        value: kanban
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: kanban
+  service:
+    type: NodePort
+    port: 8080
+    nodePort: 31004
